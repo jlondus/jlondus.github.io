@@ -1,0 +1,30 @@
+body {
+	font-family: "avenir", sans-serif;
+	font-size: 24px; 
+	max-width: 1200px;
+    margin: auto;
+    padding: 50px;
+}
+
+h1 {
+	font-weight: 500;
+	color: #2B4162;
+}
+	
+
+/*hero*/
+
+#heroimage{   
+  background:url('images/sorted.jpg') center center;
+  background-size:cover;
+}
+
+#content{
+  padding:100px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  color: #F5F0F6;
+  font-style: italic;
+}
+
