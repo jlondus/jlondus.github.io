@@ -53,11 +53,16 @@ p {
 img {
     max-width: 100%;
     height: auto;
+    background-color: rgba(0,0,0,0);
+  	box-shadow: 0 25px 40px -20px rgba(117,124,130,20);
+  	box-sizing: border-box;
 }
 
 /*hero*/
 #hero{
-	background-color: #30455A;
+	background: #30455A;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #30455A, #4B6C8C);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #30455A, #4B6C8C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #heroWrapper{
  	max-width: 48em;
@@ -88,7 +93,7 @@ img {
 	color: #fff;
 	display:inline-block;
 	margin:1em .5em 0 0;
-	padding:.5em;
+	padding:.5em .7em;
 	text-decoration:none;
 	font-size: .75em;
 	font-weight: 100;
@@ -162,7 +167,17 @@ input[type=submit] {
 	color: white;
 	border-radius: 2em;
 	padding: 1em 2em;
-}
+  	box-shadow: 0 25px 40px -20px rgba(0,0,0,20);
+  	box-sizing: border-box;
+  	transition: box-shadow .4s;
+ 	&:hover {
+    box-shadow: 0 30px 50px -20px rgba(0,0,0,20);
+   	}
+   	 &.click {
+    transition: all .2s;
+    box-shadow: 0 0 1px -10px rgba(0,0,0,20);
+  	}
+ }
 #footerWrapper {
 	background-color: #A89B9D;
 }
